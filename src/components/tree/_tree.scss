@@ -1,0 +1,98 @@
+.tree {
+    position: relative;
+
+    .leafs {
+        &>.leaf:nth-child(1) {
+            right: 94px;
+            z-index: 3;
+            top: -100px;
+
+            .apple {
+                right: 68px;
+                top: 60px;
+
+                &.down {
+                    top: 366px;
+                }
+
+                &.onBasket {
+                    left: 510px;
+                }
+            }
+        }
+
+        &>.leaf:nth-child(2) {
+            right: 20px;
+            top: -200px;
+            z-index: 2;
+
+            .apple {
+                right: 72px;
+                top: 50px;
+
+                &.down {
+                    top: 466px;
+                }
+
+                &.onBasket {
+                    left: 397px;
+                }
+            }
+        }
+
+        &>.leaf:nth-child(3) {
+            top: -100px;
+            z-index: 1;
+
+            .apple {
+                right: 45px;
+                top: 72px;
+
+                &.down {
+                    top: 366px;
+                }
+
+                &.onBasket {
+                    left: 292px;
+                }
+            }
+        }
+    }
+}
+
+.shakeTree {
+    animation: shakeTree 1s ease-in-out;
+}
+
+.down {
+    transition: top 1s ease-in-out;
+}
+
+.onBasket{
+    transition: left 1s ease-in-out;
+    opacity: 0.5;
+}
+
+@keyframes shakeTree {
+
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%,
+    80% {
+        transform: translate3d(5px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-7px, 0, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate3d(7px, 0, 0);
+    }
+}

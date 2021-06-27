@@ -1,0 +1,11 @@
+.sky{
+    position: absolute;
+    left: 32px;
+    top: 32px;
+    & > .cloud:nth-child(1){
+        left: 124px;
+    }
+    & > .cloud:nth-child(2){
+        top: 104px;
+    }
+}

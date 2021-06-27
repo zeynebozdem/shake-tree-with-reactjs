@@ -1,0 +1,9 @@
+@import "../../styles/base/_app.scss";
+.forest{
+    @include flex-center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-skyblue);
+    font-family: 'Baloo 2', cursive;
+}

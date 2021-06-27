@@ -1,0 +1,8 @@
+@import "../../styles/base/_app.scss";
+.floor{
+    @include flex-center;
+    width: 944px;
+    height: 128px;
+    background-color: var(--color-green-100);
+    border-radius: 211px;
+}
